@@ -1,0 +1,27 @@
+What is an Enum?
+
+- Short for enumeration
+- A fixed set of predefined values
+- Enum ensures that users are unable to enter random values example random priority texts
+
+- Enums are useful when a variable should only accept a limited number of valid options. 
+  example, a task-management system might only allow the following priority levels:
+
+Low
+Medium
+High
+Urgent
+
+Using an enum prevents users or developers from entering random or inconsistent values such as "very high", "important", "HIGHH" or "ASAP".
+
+enum Priority {
+    LOW,
+    MEDIUM,
+    HIGH,
+    URGENT
+}
+
+- A variable using this enum can only contain one of those predefined values:
+
+- Priority taskPriority = Priority.HIGH;
+- Priority taskPriority = "Very Important"; // Invalid

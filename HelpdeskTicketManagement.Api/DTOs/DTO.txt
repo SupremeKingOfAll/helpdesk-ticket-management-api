@@ -1,0 +1,22 @@
+What is a DTO?
+
+- Means: Data Transfer Object
+
+- This file controls what data someone is allowed to send when creating a ticket.
+- When creating a ticket, the user should send:
+
+= Title
+= Description
+= Priority
+= CreatedBy
+
+- The user should not send:
+
+= TicketId
+= Status
+= CreatedAt
+= UpdatedAt
+
+- Because the system should handle those.
+
+Note: I will create CreateTicketDto for the input shape for creating a ticket.

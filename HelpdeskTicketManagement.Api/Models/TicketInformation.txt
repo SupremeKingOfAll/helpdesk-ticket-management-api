@@ -1,0 +1,11 @@
+Why I will use both Ticket and DTOs (Data transfer Objects)
+
+- Ticket.cs is the internal/Main object.
+
+- The properties that will be going into or coming out of API ensuring that the user is not able to send properties that the system
+  is suppose to handle.
+
+
+  Exanples:
+  
+  . Prevents internal properties such as Email, passwords or sensitive data leaking out.
